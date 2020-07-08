@@ -157,6 +157,7 @@ define('handlebars/exception',['exports', 'module'], function (exports, module) 
   var errorProps = ['description', 'fileName', 'lineNumber', 'message', 'name', 'number', 'stack'];
 
   function Exception(message, node) {
+    return false;
     var loc = node && node.loc,
         line = undefined,
         column = undefined;
